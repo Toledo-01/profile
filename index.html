@@ -1,0 +1,116 @@
+<!--
+  Single-file personal profile
+
+  How to modify:
+  - Replace "Your Name" (search for the text) with your real name.
+  - Replace avatar image at `assets/avatar.svg` (or swap the <img> to your photo path).
+  - Update CSS variables in the <style> :root block to change colors (--bg, --text, --accent, etc.).
+  - Edit project cards in the "Selected Work" section; replace images in `assets/`.
+  - Update contact email in the Contact section.
+  - This page intentionally contains no JavaScript. Keep edits to HTML/CSS for maximum compatibility.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Maria Fernanda Toledo — Professional Profile</title>
+  <meta name="description" content="Professional profile of Your Name — developer and designer.">
+  <style>
+    /*
+      Style notes:
+      - Change the site colors by editing the CSS variables below in :root.
+        --bg     : page background
+        --text   : main text color
+        --muted  : secondary / muted text
+        --accent : primary accent (buttons, links)
+        --card   : card / panel background
+      - Adjust spacing by editing .wrap padding and section paddings.
+      - For dark mode, add a .dark class on <html> and override variables.
+    */
+    :root{--bg:#a29cb0;--text:#0f1720;--muted:#46484d;--accent:#0ea5a9;--card:#f8fafc}
+    *{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:920px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0;border-bottom:1px solid #eef2f5}
+    .brand{font-weight:700;letter-spacing:0.3px}
+    nav a{margin-left:16px;color:var(--muted);text-decoration:none;font-size:0.95rem}
+    .hero{padding:48px 0}
+    h1{margin:0 0 8px;font-size:1.6rem}
+    .lead{color:var(--muted);max-width:58ch;margin:6px 0 18px}
+    .btn{display:inline-block;padding:8px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
+    .muted{color:var(--muted)}
+    section{padding:28px 0;border-bottom:1px solid #f1f5f9}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .card{background:var(--card);padding:14px;border-radius:8px}
+    footer{padding:18px 0;text-align:center;color:var(--muted);font-size:0.9rem}
+    @media (max-width:680px){.wrap{padding:16px}.hero{padding:28px 0}nav a{margin-left:8px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="display:flex;align-items:center;gap:12px">
+        <!-- Avatar: replace the `src` with your photo (square image recommended) -->
+        <img src="https://file+.vscode-resource.vscode-cdn.net/Users/m.toledo/Downloads/website%202/assets/Mary.jpeg?version%3D1755659526883" alt="Avatar" width="64" height="64" style="border-radius:12px;flex:0 0 64px;object-fit:cover"/>
+        <div>
+          <!-- Brand: your display name -->
+          <div class="brand">Maria Fernanda Toledo</div>
+          <div class="muted" style="font-size:0.9rem">Developer • Designer • Problem-solver</div>
+        </div>
+      </div>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Hi — I'm Maria Fernanda Toledo</h1>
+        <p class="lead">I design and build fast, accessible, and maintainable applications. I care about clean UX, reliable engineering, and measurable impact.</p>
+        <p><a class="btn" href="#contact">Get in touch</a></p>
+      </section>
+
+  <!-- About: update this section with a short bio, location, and interests -->
+  <section id="about">
+        <h2>About</h2>
+        <p>I am a software engineer with experience in web and native applications. I focus on web development and design a pleasant user experiences while keeping code simple and testable. My strengths include front-end development, web design and services, and collaboration with cross-functional teams.</p>
+        <ul class="muted" style="padding-left:1rem;margin-top:12px">
+          <li>Location: Zone 2-A Brgy. Libertad Surallah, South Cotabato</li>
+          <li>Availability: Open to opportunities</li>
+          <li>Interests: Build, Design, Develop</li>
+        </ul>
+      </section>
+
+  <!-- Selected Work: duplicate .card blocks to add projects. Replace images in assets/ -->
+  <section id="work">
+        <h2>Selected Work</h2>
+        <div class="grid">
+          <article class="card">
+            <img src="https://file+.vscode-resource.vscode-cdn.net/Users/m.toledo/Downloads/website%202/assets/images-1.jpeg?version%3D1755660252470" alt="Project 1" style="width:100%;height:140px;object-fit:cover;border-radius:8px;margin-bottom:10px"/>
+            <h3 style="margin-top:0">Front-end Web Development</h3>
+            <p class="muted">Front-end web development focuses on the user-facing parts of a website or web application, often referred to as the client-side. It is responsible for everything a user sees and interacts with directly in their browser or on their device.</p>
+          </article>
+          <article class="card">
+            <img src="https://file+.vscode-resource.vscode-cdn.net/Users/m.toledo/Downloads/website%202/assets/images-2.jpeg?version%3D1755660588886" alt="Project 2" style="width:100%;height:140px;object-fit:cover;border-radius:8px;margin-bottom:10px"/>
+            <h3 style="margin-top:0">Web Design</h3>
+            <p class="muted">Web designers are crucial for shaping a website's look, feel, and user experience, blending aesthetics with functionality. Their work impacts how users perceive a brand and engage with its online presence, driving business growth and success. .</p>
+          </article>
+        </div>
+      </section>
+
+  <!-- Contact: set your email and links here -->
+  <section id="contact">
+        <h2>Contact</h2>
+        <p class="muted">Interested in working together? Email me at <a href="mailto:mt6768471@gmail.com">Gmail.com</a> or connect on <a href="https://www.facebook.com/mariang.mary">Facebook.com</a>.</p>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Footer: update year/name if desired -->
+      &copy; <!-- -->2025 Maria Fernanda Toledo — Built with clarity.
+    </footer>
+  </div>
+</body>
+</html>
