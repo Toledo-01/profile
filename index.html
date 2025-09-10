@@ -28,26 +28,26 @@
       - Adjust spacing by editing .wrap padding and section paddings.
       - For dark mode, add a .dark class on <html> and override variables.
     */
-    :root{--bg:#d6d5d8;
-      --text:#0f1720;
-      --muted:#46484d;
-      --accent:#0c6451;
+    :root{--bg:#bcbac0;
+      --text:#072343;
+      --muted:#464748;
+      --accent:#556859;
       --card:#f8fafc}
 
     *{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
-    .wrap{max-width:920px;margin:0 auto;padding:28px}
+    .wrap{max-width:930px;margin:0 auto;padding:30px}
     header{display:flex;align-items:center;justify-content:space-between;padding:18px 0;border-bottom:1px solid #eef2f5}
-    .brand{font-weight:700;letter-spacing:0.3px}
-    nav a{margin-left:16px;color:var(--muted);text-decoration:none;font-size:0.95rem}
-    .hero{padding:48px 0}
-    h1{margin:0 0 8px;font-size:1.6rem}
-    .lead{color:var(--muted);max-width:58ch;margin:6px 0 18px}
-    .btn{display:inline-block;padding:8px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
+    .brand{font-weight:800;letter-spacing:0.5px}
+    nav a{margin-left:20px;color:var(--muted);text-decoration:none;font-size:0.99rem}
+    .hero{padding:50px 0}
+    h1{margin:0 0 9px;font-size:1.7rem}
+    .lead{color:var(--muted);max-width:60ch;margin:7px 0 19px}
+    .btn{display:inline-block;padding:8px 14px;border-radius:8px;background:var(--accent);color:#170101;text-decoration:none}
     .muted{color:var(--muted)}
-    section{padding:28px 0;border-bottom:1px solid #f1f5f9}
+    section{padding:28px 0;border-bottom:1px solid #d8dbe1}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
     .card{background:var(--card);padding:14px;border-radius:8px}
-    footer{padding:18px 0;text-align:center;color:var(--muted);font-size:0.9rem}
+    footer{padding:25px 0;text-align:center;color:var(--muted);font-size:0.9rem}
     @media (max-width:680px){.wrap{padding:16px}.hero{padding:28px 0}nav a{margin-left:8px}}
   </style>
 </head>
@@ -94,12 +94,12 @@
         <div class="grid">
           <article class="card">
             <img src="https://tse2.mm.bing.net/th/id/OIP.q5Uv7Pzc2J-UsJiJCDdQ8wHaD4?pid=Api&P=0&h=220" alt="Project 1" style="width:100%;height:140px;object-fit:cover;border-radius:8px;margin-bottom:10px"/>
-            <h3 style="margin-top:0">Front-end Development</h3>
+            <h3 style="margin-top:1px">Front-end Development</h3>
             <p class="muted">Front-end web development focuses on the user-facing parts of a website or web application, often referred to as the client-side. It is responsible for everything a user sees and interacts with directly in their browser or on their device.</p>
           </article>
           <article class="card">
             <img src="https://tse1.mm.bing.net/th/id/OIP.xTOGlf3XcaBFqh2xKMKeJwHaEc?pid=Api&P=0&h=220" alt="Project 2" style="width:100%;height:140px;object-fit:cover;border-radius:8px;margin-bottom:10px"/>
-            <h3 style="margin-top:0">Web Design</h3>
+            <h3 style="margin-top:1px">Web Design</h3>
             <p class="muted">Web designers are crucial for shaping a website's look, feel, and user experience, blending aesthetics with functionality. Their work impacts how users perceive a brand and engage with its online presence, driving business growth and success. .</p>
           </article>
         </div>
